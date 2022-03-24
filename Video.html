@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片觀賞</title>
+</head>
+<body>
+    <label for="">請輸入密碼：</label>
+    <input id="pw" type="password">
+    <input id="Ok" type="button" value="確定">
+    
+    <Script>
+        document.getElementById('Ok').addEventListener('click',function(){
+            if(document.getElementById('pw').value == 'as123456'){
+                document.querySelector('body').innerHTML = '<video src="Video/000" controls></video>';
+            }
+        });
+    </Script>
+</body>
+</html>
